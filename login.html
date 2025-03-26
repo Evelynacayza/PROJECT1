@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Evelyna</title>
+    <style>
+        body {
+            margin: auto;
+            height: 100vb;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: url('bglog.jpg') no-repeat center center;
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: 'Times New Roman', Times, serif
+        }
+        h1 {
+            font-size: 70px;
+            font-weight: bold;
+            color: black;
+            text-shadow: 3px 3px 5px rgba(255, 255, 255, 0.7);
+            margin-bottom: 25px;
+            margin-top: 5px;
+        }
+        fieldset {
+            width: 250px;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 12, 124, 0.1);
+            background-color: rgb(222, 235, 248);
+            text-align: center;
+            margin: auto;
+            font-weight: bold;
+        }
+        footer {
+            margin-top: 2px;
+            text-align: center;
+            font-size: 18px;
+        }
+        input, select, button {
+            display: block;
+            width: 100%;
+            margin-top: 5px;
+            padding: 8px;
+            border: 5px rgb(101, 0, 91);
+        }
+        button {
+            background-color: rgba(217, 175, 251, 0.636);
+            color: rgba(1, 23, 52, 0.803);
+            cursor: pointer;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Laporan Praktikum</h1>
+    <h1 style="text-align: center;">Evelyna Beatrice</h1>
+
+    <form action="homepage.html" method="get">
+        <fieldset>
+
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required
+            autofocus
+            placeholder="Please Insert Your Username"><br><br>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required
+            pattern="[A-Z]{5-10}[a-z]{5-10}[0-9]{8-10}"
+            placeholder="Please Insert Your Password"><br><br>
+
+            <button type="submit">Login</button>
+        </fieldset>
+    </form>
+    <footer><p>Created &copy; 2025 by <a href="https://evelyna.laporan">Evelyna Cayza</a></p></footer>
+</body>
+</html>

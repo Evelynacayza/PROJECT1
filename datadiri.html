@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Diri</title>
+    <style>
+        body {
+            margin: auto;
+            height: 100vb;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: url('bguniv.jpg') no-repeat center center;
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: 'Times New Roman', Times, serif
+        }
+        h1 {
+            font-size: 80px;
+            font-weight: bold;
+            color: black;
+            text-shadow: 3px 3px 5px rgba(255, 255, 255, 0.7);
+            margin-bottom: 20px;
+        }
+        fieldset {
+            width: 325px;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px rgba(68, 0, 68, 0.1);
+            background-color: rgb(255, 231, 250);
+            text-align: left;
+            margin: auto;
+            font-weight: bold;
+        }
+        footer {
+            margin-top: 2px;
+            text-align: center;
+            font-size: 18px;
+        }
+        input, select, button {
+            display: block;
+            width: 100%;
+            margin-top: 5px;
+            padding: 8px;
+            border: 5px rgb(53, 0, 138);
+        }
+        button {
+            background-color: rgba(210, 240, 251, 0.636);
+            color: rgb(0, 46, 98);
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+        button:hover {
+            background-color: rgb(255, 255, 255);
+        }
+        h2 {
+            margin-top: -15px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Digital Nexus University</h1>
+    <form action="gifmahasiswa.html" method="get">
+        <fieldset>
+            <h2 style="text-align: center;">Student's Personal Data</h2>
+
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Enter Your Name">
+
+            <label for="nim">NIM</label>
+            <input type="text" id="nim" name="nim" required pattern="[0-9]{8,10}" placeholder="Enter Your ID">
+
+            <label for="major">Major</label>
+            <select name="major" id="major" required>
+                <option value="">-- Choice of Major --</option>
+                <option value="Information System">Information System</option>
+                <option value="Informatics Engineering">Informatics Engineering</option>
+                <option value="Industrial Engineering">Industrial Engineering</option>
+                <option value="Civil Engineering">Civil Engineering</option>
+                <option value="Electrical Engineering">Electrical Engineering</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+    <footer>
+        <p>Created &copy; 2025 by <a href="https://evelyna.laporan">Evelyna Cayza</a></p>
+    </footer>
+</body>
+</html>

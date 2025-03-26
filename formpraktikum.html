@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Data Diri</title>
+</head>
+<body style="margin: 0; height: 100vh;">
+
+    <table border="0" width="100%" height="100%">
+        <tr>
+            <td align="center">
+                <form action="gifmahasiswa.html" method="get">
+                    <fieldset style="width: auto; height: 90vh;">
+                        <h1 style="text-align: center;">Data Diri Mahasiswa</h1>
+
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required
+                        autofocus
+                        placeholder="Enter Your Name"><br><br>
+
+                        <label for="nim">NIM</label>
+                        <input type="nim" id="nim" name="nim" required
+                        pattern="[0-9]{8-10}"
+                        placeholder="Enter Your ID"><br><br>
+
+                        <label for="jurusan">Major</label>
+                        <select name="major" id="major" required>
+                        <option value="">-- Choice of Major --</option>
+                        <option value="Information System">Information System</option>
+                        <option value="Informatics Enginerring">Informatics Enginerring</option>
+                        <option value="Industrial Enginerring">Industrial Enginerring</option>
+                        <option value="Civil Enginerring">Civil Enginerring</option>
+                        <option value="Electrical Enginerring">Electrical Enginerring</option>
+                        </select><br><br>
+
+                        <button type="submit">Submit</button>
+                    </fieldset align="center">
+                </form>
+            </td>
+        </tr>
+    </table>
+
+    <footer align="center">
+        <p>Created &copy; 2025 by <a href="https://evelyna.laporan">Evelyna Cayza</a></p>
+    </footer>
+</body>
+</html>
